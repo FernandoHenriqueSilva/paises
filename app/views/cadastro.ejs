@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de País</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Cadastro de País</h1>
+  <form action="/cadastro" method="post" enctype="multipart/form-data">
+    <label for="nome">Nome do País:</label><br>
+    <input type="text" id="nome" name="nome" required><br>
+    <label for="idioma">Idioma:</label><br>
+    <input type="text" id="idioma" name="idioma" required><br>
+    <label for="populacao">População:</label><br>
+    <input type="number" id="populacao" name="populacao" required><br>
+    <label for="bandeira">Bandeira (75x50):</label><br>
+    <input type="file" id="bandeira" name="bandeira" required accept=".jpg, .jpeg, .png"><br>
+    <button type="submit">Cadastrar</button>
+  </form>
+</body>
+</html>

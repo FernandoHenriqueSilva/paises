@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Países</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Consulta de Países</h1>
+  <div class="grid-container">
+    <% paises.forEach(pais => { %>
+      <div class="grid-item">
+        <img src="/uploads/<%= pais.bandeira %>" alt="Bandeira de <%= pais.nome %>">
+        <h2><%= pais.nome %></h2>
+        <p>Idioma: <%= pais.idioma %></p>
+        <p>População: <%= pais.populacao %></p>
+      </div>
+    <% }) %>
+  </div>
+</body>
+</html>
