@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: paises
-        image: fernandohs99/paises:v1
+        image: fernandohs99/paises:v2
         ports:
         - containerPort: 3030
 ---
@@ -26,12 +26,8 @@ spec:
   selector:
     app: paises
   ports:
- #   - name: port-3030
- #     protocol: TCP
- #     port: 3030
- #     targetPort: 3030
     - port: 3030
       targetPort: 3030
-      nodePort: 30000
+      nodePort: 30001
   type: NodePort
-  #type: LoadBalancer
+
