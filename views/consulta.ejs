@@ -11,7 +11,8 @@
   <div class="grid-container">
     <% paises.forEach(pais => { %>
       <div class="grid-item">
-        <img src="/uploads/<%= pais.bandeira %>" alt="Bandeira de <%= pais.nome %>">
+        <!-- Ajuste a URL da imagem para apontar para o Azure Blob Storage -->
+        <img src="https://storagefernando.blob.core.windows.net/apppaises/<%= pais.bandeira %>" alt="Bandeira de <%= pais.nome %>">
         <h2><%= pais.nome %></h2>
         <p>Idioma: <%= pais.idioma %></p>
         <p>População: <%= pais.populacao %></p>

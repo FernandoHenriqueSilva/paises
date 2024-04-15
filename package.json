@@ -1,16 +1,16 @@
 {
-    "name": "minha-aplicacao",
-    "version": "1.0.0",
-    "description": "Uma aplicação Node.js para cadastro e consulta de países",
-    "main": "app.js",
-    "scripts": {
-      "start": "node app.js"
-    },
-    "dependencies": {
-      "express": "^4.17.1",
-      "ejs": "^3.1.6",
-      "multer": "^1.4.3",
-      "mysql": "^2.18.1"
-    }
+  "name": "minha-aplicacao",
+  "version": "1.0.0",
+  "description": "Uma aplicação Node.js para cadastro e consulta de países",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ejs": "^3.1.6",
+    "multer": "^1.4.3",
+    "mysql": "^2.18.1",
+    "@azure/storage-blob": "^12.7.0"
   }
-  
+}
